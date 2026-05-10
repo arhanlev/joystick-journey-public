@@ -1,0 +1,72 @@
+.page {
+  min-height: 100vh;
+  background: #FDFAF4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background: #F5F0E8;
+  border: 1px solid rgba(60,40,10,0.15);
+  border-radius: 8px;
+  padding: 3rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.icon {
+  font-size: 3.5rem;
+}
+
+.title {
+  font-family: var(--font-playfair);
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1A1208;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  font-size: 0.95rem;
+  color: #6B5740;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.info {
+  background: #FDFAF4;
+  border: 1px solid rgba(60,40,10,0.12);
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.info p {
+  font-size: 0.88rem;
+  color: #6B5740;
+}
+
+.btn {
+  background: #1A1208;
+  color: #F5F0E8;
+  text-decoration: none;
+  padding: 0.85rem 2rem;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #3D2B0A;
+}

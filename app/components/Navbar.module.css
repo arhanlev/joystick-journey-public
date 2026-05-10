@@ -1,0 +1,134 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+.scrolled {
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  padding: 1rem 3rem;
+  border-bottom: 0.5px solid rgba(200, 121, 26, 0.2);
+}
+
+.logo {
+  font-family: var(--font-playfair);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #F5F0E8;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.logo:hover { opacity: 0.8; }
+
+.logo span { color: #C8791A; }
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navLinks a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(245, 240, 232, 0.6);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #C8791A;
+  transition: width 0.3s ease;
+}
+
+.navLinks a:hover { color: #F5F0E8; }
+.navLinks a:hover::after { width: 100%; }
+
+.activeLink {
+  color: #F5F0E8 !important;
+}
+
+.activeLink::after {
+  width: 100% !important;
+}
+
+.navCta {
+  background: transparent;
+  color: #C8791A;
+  border: 1px solid #C8791A;
+  padding: 0.55rem 1.4rem;
+  border-radius: 2px;
+  font-family: var(--font-dm-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navCta:hover {
+  background: #C8791A;
+  color: #0A0A0A;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: #F5F0E8;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .navLinks { display: none; }
+  .hamburger { display: flex; }
+
+  .navLinks.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #0A0A0A;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 99;
+  }
+
+  .navLinks.open a {
+    font-size: 1.5rem;
+  }
+}

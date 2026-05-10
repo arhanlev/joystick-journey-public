@@ -1,0 +1,207 @@
+.section {
+  padding: 7rem 5rem;
+  background: #0D0D0D;
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,121,26,0.3), transparent);
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #C8791A;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-playfair);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #F5F0E8;
+}
+
+.title em {
+  font-style: italic;
+  background: linear-gradient(135deg, #C8791A, #E8A84A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.step:hover {
+  background: rgba(245, 240, 232, 0.03);
+}
+
+.active {
+  background: rgba(200, 121, 26, 0.05) !important;
+}
+
+.stepLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 2.5rem;
+}
+
+.num {
+  font-family: var(--font-playfair);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgba(245, 240, 232, 0.15);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  transition: color 0.3s;
+}
+
+.active .num {
+  color: #C8791A;
+}
+
+.stepLine {
+  width: 1px;
+  height: 30px;
+  background: rgba(245, 240, 232, 0.08);
+  transition: background 0.3s;
+}
+
+.stepLineActive {
+  background: linear-gradient(to bottom, #C8791A, transparent);
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepContent h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(245, 240, 232, 0.5);
+  margin-bottom: 0.4rem;
+  transition: color 0.3s;
+  letter-spacing: -0.01em;
+}
+
+.active .stepContent h4 {
+  color: #F5F0E8;
+}
+
+.stepContent p {
+  font-size: 0.85rem;
+  color: rgba(245, 240, 232, 0.3);
+  line-height: 1.7;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+.active .stepContent p {
+  color: rgba(245, 240, 232, 0.55);
+}
+
+.stepArrow {
+  color: rgba(200, 121, 26, 0);
+  transition: color 0.3s;
+  margin-top: 2px;
+}
+
+.active .stepArrow {
+  color: #C8791A;
+}
+
+.imageWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageGlow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(200,121,26,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.imageInner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(245, 240, 232, 0.06);
+}
+
+.stepLabel {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  background: #C8791A;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stepLabel span {
+  font-family: var(--font-playfair);
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #0A0A0A;
+  letter-spacing: -0.03em;
+}
+
+.stepLabel p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(10,10,10,0.7);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 4rem 1.5rem; }
+  .layout { grid-template-columns: 1fr; gap: 2rem; }
+  .imageWrap { display: none; }
+}
