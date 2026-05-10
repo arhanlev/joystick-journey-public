@@ -25,12 +25,13 @@ const colorHex = {
   Black: '#1A1A1A',
 }
 
-const joystickColors = ['Standard', 'Red', 'Black', 'Green', 'Retro']
+const joystickColors = ['Standard', 'Red', 'Black', 'Green', 'Blue', 'Retro']
 const joystickHex = {
   Standard: '#F5F5F5',
   Red: '#D94040',
   Black: '#1A1A1A',
   Green: '#3DAA6A',
+  Blue: '#3A7BD5',
 }
 
 
@@ -42,7 +43,7 @@ const accordionItems = [
   },
   {
     title: 'Shipping info',
-    content: 'Ships in 3-5 business days. Free shipping on orders over $35. For questions email joystickjourney@gmail.com'
+    content: 'Ships in 3-5 business days. Free shipping on orders over $35. For questions email officaljoystickjourney@gmail.com'
   },
   {
     title: 'Maze bundle details',
@@ -257,7 +258,7 @@ export default function ShopPage() {
         </div>
 
         <p className={styles.shipping}>
-          🚚 Ships in 3-5 business days · Questions? <a href="mailto:joystickjourney@gmail.com">joystickjourney@gmail.com</a>
+          🚚 Ships in 3-5 business days · Questions? <a href="mailto:officialjoystickjourney@gmail.com">officialjoystickjourney@gmail.com</a>
         </p>
 
         {/* Accordion */}
