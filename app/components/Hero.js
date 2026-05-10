@@ -132,11 +132,11 @@ export default function Hero() {
           className={styles.productImage}
         />
         <div className={styles.floatBadge} onClick={() => setShowMazes(true)}>
-  <span>Swap the maze</span>
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8791A" strokeWidth="2">
-    <path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/>
-  </svg>
-</div>
+        <span>Click here to swap maze</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8791A" strokeWidth="2">
+          <path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/>
+        </svg>
+      </div>
 
 {showMazes && (
   <div className={styles.mazeOverlay} onClick={() => setShowMazes(false)}>

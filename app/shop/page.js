@@ -39,7 +39,7 @@ const joystickHex = {
 const accordionItems = [
   {
     title: "What's included",
-    content: 'Joystick Journey base unit, joystick controller, 4 swappable maze boards, 1 precision steel marble, and a quick-start guide.'
+    content: 'Joystick Journey base unit, joystick controller, 4 swappable maze boards, five 4.5 mm precision steel marbles, and a quick-start guide.'
   },
   {
     title: 'Shipping info',
@@ -51,7 +51,8 @@ const accordionItems = [
   },
   {
     title: 'Contact & support',
-    content: 'Have a question? Reach us at officialjoystickjourney@gmail.com — we typically respond within 24 hours.'
+    content: 'Have a question? Reach us at officialjoystickjourney@gmail.com — we typically respond within 24 hours. You can also follow us on TikTok @officialjoystickjourney and Instagram @officialjoystickjourney for updates, new maze drops, and more!'
+
   }
 ]
 
@@ -175,7 +176,7 @@ export default function ShopPage() {
         </div>
 
         <p className={styles.desc}>
-          A precision joystick-controlled marble maze with modular, swappable boards. One base, endless challenges — designed for every age, built to last.
+          A precision joystick-controlled marble maze with modular, swappable boards. One base, endless challenges — designed for every age, built to last. Comes with five 4.5mm marbles included for free.
         </p>
 
         {/* Maze Color */}
@@ -260,7 +261,9 @@ export default function ShopPage() {
         <p className={styles.shipping}>
           🚚 Ships in 3-5 business days · Questions? <a href="mailto:officialjoystickjourney@gmail.com">officialjoystickjourney@gmail.com</a>
         </p>
-
+      <p className={styles.disclaimer}>
+        ⚠️ Choking hazard — contains small parts. Not suitable for children under 3 years.
+      </p>
         {/* Accordion */}
         <div className={styles.accordion}>
           {accordionItems.map((item, i) => (
