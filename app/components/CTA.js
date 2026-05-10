@@ -59,7 +59,7 @@ export default function CTA() {
         </div>
         <div className={styles.trust}>
           <span>🚚 Ships in 3-5 days</span>
-          <span>✉️ joystickjourney@gmail.com</span>
+          <span>✉️ officaljoystickjourney@gmail.com</span>
           <span>🔒 Secure checkout</span>
         </div>
       </motion.div>

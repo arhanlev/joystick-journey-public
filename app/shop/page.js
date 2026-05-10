@@ -50,7 +50,7 @@ const accordionItems = [
   },
   {
     title: 'Contact & support',
-    content: 'Have a question? Reach us at joystickjourney@gmail.com — we typically respond within 24 hours.'
+    content: 'Have a question? Reach us at officialjoystickjourney@gmail.com — we typically respond within 24 hours.'
   }
 ]
 
