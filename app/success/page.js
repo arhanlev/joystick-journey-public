@@ -12,7 +12,7 @@ export default function SuccessPage() {
         </p>
         <div className={styles.info}>
           <p>📦 Ships in 3-5 business days</p>
-          <p>📧 Questions? joystickjourney@gmail.com</p>
+          <p>📧 Questions? officialjoystickjourney@gmail.com</p>
         </div>
         <Link href="/" className={styles.btn}>Back to Home</Link>
       </div>
