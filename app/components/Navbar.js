@@ -17,10 +17,10 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
-      <Link href="/" className={styles.logo}>
-        Joystick <span>Journey</span>
-      </Link>
-
+                <Link href="/" className={styles.logo}>
+  <img src="/logo1.png" alt="Joystick Journey" className={styles.logoImg} />
+  Joystick <span>Journey</span>
+</Link>
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
         <li><Link href="/features" className={pathname === '/features' ? styles.activeLink : ''}>Features</Link></li>
         <li><Link href="/how-it-works" className={pathname === '/how-it-works' ? styles.activeLink : ''}>How It Works</Link></li>
