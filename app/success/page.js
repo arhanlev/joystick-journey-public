@@ -11,7 +11,7 @@ export default function SuccessPage() {
           Thank you for your purchase! Your Joystick Journey is on its way. You'll receive a confirmation email shortly.
         </p>
         <div className={styles.info}>
-          <p>📦 Ships in 3-5 business days</p>
+          <p>📦 Ships in 1-2 weeks</p>
           <p>📧 Questions? officialjoystickjourney@gmail.com</p>
         </div>
         <Link href="/" className={styles.btn}>Back to Home</Link>
