@@ -43,7 +43,7 @@ const accordionItems = [
   },
   {
     title: 'Shipping info',
-    content: 'Ships in 3-5 business days. Free shipping on orders over $35. For questions email officaljoystickjourney@gmail.com'
+    content: 'Ships in 1-2 weeks. Free shipping on orders over $35. For questions email officaljoystickjourney@gmail.com'
   },
   {
     title: 'Maze bundle details',
@@ -259,7 +259,7 @@ export default function ShopPage() {
         </div>
 
         <p className={styles.shipping}>
-          🚚 Ships in 3-5 business days · Questions? <a href="mailto:officialjoystickjourney@gmail.com">officialjoystickjourney@gmail.com</a>
+          🚚 Ships in 1-2 weeks · Questions? <a href="mailto:officialjoystickjourney@gmail.com">officialjoystickjourney@gmail.com</a>
         </p>
       <p className={styles.disclaimer}>
         ⚠️ Choking hazard — contains small parts. Not suitable for children under 3 years.

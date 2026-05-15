@@ -58,7 +58,7 @@ export default function CTA() {
           <Link href="/tutorial" className={styles.btnSecondary}>Watch Tutorial</Link>
         </div>
         <div className={styles.trust}>
-          <span>🚚 Ships in 3-5 days</span>
+          <span>🚚 Ships in 1-2 weeks</span>
           <span>✉️ officaljoystickjourney@gmail.com</span>
           <span>🔒 Secure checkout</span>
         </div>
