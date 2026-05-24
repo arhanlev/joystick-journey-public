@@ -86,7 +86,7 @@ export async function POST(request) {
             <!-- Footer -->
             <div style="text-align:center;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);">
               <p style="font-size:12px;color:rgba(245,240,232,0.2);margin:0;line-height:1.6;">
-                Questions? Email us at <a href="mailto:joystickjourney@gmail.com" style="color:#C8791A;text-decoration:none;">joystickjourney@gmail.com</a><br/>
+                Questions? Email us at <a href="mailto:officialjoystickjourney@gmail.com" style="color:#C8791A;text-decoration:none;">joystickjourney@gmail.com</a><br/>
                 ⚠️ Choking hazard — contains small parts. Not suitable for children under 3 years.
               </p>
             </div>
