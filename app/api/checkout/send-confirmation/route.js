@@ -8,7 +8,7 @@ export async function POST(request) {
     const { customerEmail, customerName, orderDetails } = body
 
     await resend.emails.send({
-      from: 'Joystick Journey <hello@joystickjourney.shop>',
+      from: 'Joystick Journey <confirmation@joystickjourney.shop>',
       to: customerEmail,
       subject: 'Your Joystick Journey Order is Confirmed! 🎉',
       html: `
