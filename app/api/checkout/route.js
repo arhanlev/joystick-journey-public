@@ -24,6 +24,28 @@ export async function POST(request) {
       shipping_address_collection: {
         allowed_countries: ['US', 'CA'],
       },
+      shipping_options: [
+        {
+          shipping_rate_data: {
+            type: 'fixed_amount',
+            fixed_amount: {
+              amount: 421,
+              currency: 'usd',
+            },
+            display_name: 'Standard Shipping',
+            delivery_estimate: {
+              minimum: {
+                unit: 'week',
+                value: 1,
+              },
+              maximum: {
+                unit: 'week',
+                value: 2,
+              },
+            },
+          },
+        },
+      ],
       success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/shop`,
       metadata: {
