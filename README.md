@@ -3,6 +3,8 @@ Joystick Journey
 A premium e-commerce website for a joystick-controlled marble maze with swappable boards built with Next.js, Stripe API, and Resend API.
 Live demo at https://www.joystickjourney.shop
 
+<img width="500" height="500" alt="ChatGPT Image May 13, 2026, 08_41_23 PM" src="https://github.com/user-attachments/assets/5a80a6f2-0790-41da-a99d-2a6c094e606f" />
+
 Features:
 
 Full e-commerce store with Stripe checkout. Real payments, shipping address collection, and order confirmation
