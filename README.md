@@ -18,4 +18,4 @@ How It Works:
 
 The site is built on Next.js App Router with a fully serverless backend. When a customer clicks "Add to Cart", a POST request hits /api/checkout which dynamically creates a Stripe Checkout session with the selected product options (color, joystick color, bundle) passed as metadata. Stripe handles all card processing and address collection securely.
 After a successful payment, Stripe redirects to /success which fetches the session details via /api/get-session and triggers /api/send-confirmation to send a branded HTML email through Resend from confirmation@joystickjourney.shop.
-Rather than pre-creating products in Stripe's dashboard, all product data is generated dynamically at checkout time — keeping the codebase as the single source of truth for pricing and product details.
+Rather than pre-creating products in Stripe's dashboard, all product data is generated dynamically at checkout time.
