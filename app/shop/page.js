@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './shop.module.css'
 import Link from 'next/link'
 
+//added retro joystick
 
 const images = [
   '/Wholeshot.png',

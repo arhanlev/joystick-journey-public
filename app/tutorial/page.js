@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar' //added tutorial page
 import styles from './tutorial.module.css'
 
 export default function TutorialPage() {

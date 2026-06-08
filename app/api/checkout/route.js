@@ -1,4 +1,4 @@
-import Stripe from 'stripe'
+import Stripe from 'stripe' //added stripe API
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
